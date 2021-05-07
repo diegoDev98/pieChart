@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: galano;
+}
+@font-face {
+    font-family: galano;
+    src: url(../fonts/galanoBold.otf);
+  }
+  
+body {
+    
+    background: rgb(64,66,156);
+background: linear-gradient(90deg, rgba(64,66,156,1) 0%, rgba(174,182,238,1) 26%, rgba(174,182,238,1) 78%, rgba(64,66,156,1) 100%);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+button {
+    padding: 10px 20px;
+    width: 120px;
+    margin: 20px 10px;
+    
+}
+.leftPanel {
+    width: 20%;
+}
+.rightPanel {
+    width: 20%;
+}
+.middlePanel {
+    width: 60%;
+}
+input {
+    width: 80%;
+}
+#chartContainer {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width:1024px){
+    .leftPanel {
+        width: 20%;
+    }
+    .rightPanel {
+        width: 20%;
+    }
+    .middlePanel {
+        width: 60%;
+    }
+    input {
+        width: 100%;
+    }
+    #chartContainer {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .container { 
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftPanel {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .rightPanel {
+        width: 80%;
+    }
+    .middlePanel {
+        min-height: 280px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    input {
+        width: 80%;
+    }
+   
+}
